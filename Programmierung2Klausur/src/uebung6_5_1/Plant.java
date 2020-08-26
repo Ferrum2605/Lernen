@@ -1,6 +1,6 @@
-package uebung6_1_1;
+package uebung6_5_1;
 
-public class Plant {
+public abstract class Plant {
 
 	/*
 	 * Attribute
@@ -25,11 +25,7 @@ public class Plant {
 		this.isToxic = isToxic;
 	}
 	
-	public void displayAttributes() {
-		System.out.println("Typ: " + type);
-		System.out.println("Größe: " + size);
-		System.out.println("Giftig?: " + isToxic);
-	}
+	public abstract void displayAttributes();
 	
 
 	public void rise() {

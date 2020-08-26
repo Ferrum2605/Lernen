@@ -1,4 +1,4 @@
-package uebung6_1_1;
+package uebung6_1_2;
 
 public class Flower extends Plant{
 	

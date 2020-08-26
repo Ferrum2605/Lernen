@@ -1,4 +1,4 @@
-package uebung6_1_1;
+package uebung6_6_1;
 
 public class Tree extends Plant{
 	
