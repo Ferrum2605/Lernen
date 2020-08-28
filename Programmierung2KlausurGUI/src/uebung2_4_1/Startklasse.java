@@ -1,0 +1,26 @@
+package uebung2_4_1;
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.*;
+import javafx.stage.*;
+
+public class Startklasse extends Application{
+
+	public static void main(String[] args) {
+		
+		launch(args);
+	}
+	
+	public void start(Stage primaryStage) throws Exception
+	{
+		Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
+		Scene scene = new Scene(root);
+		primaryStage.setTitle("Aufgabe 2.3");
+		primaryStage.setHeight(200);
+		primaryStage.setWidth(200);
+		primaryStage.setScene(scene);
+		primaryStage.show();
+	}
+
+}

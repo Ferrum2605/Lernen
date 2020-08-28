@@ -48,10 +48,6 @@ public class View {
 		return button;
 	}
 
-	public Label getLabel()
-	{
-		return label;
-	}
 
 	
 	

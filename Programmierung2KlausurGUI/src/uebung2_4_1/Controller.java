@@ -1,4 +1,4 @@
-package uebung2_3_1;
+package uebung2_4_1;
 
 import javax.management.StringValueExp;
 
@@ -13,20 +13,22 @@ import javafx.scene.image.ImageView;
 
 public class Controller implements EventHandler<ActionEvent> {
 
-	private View view;
+	//private View view;
 	private Dice dice = new Dice(1);
 	
 	private Image image;
 	
-	public Controller(View view) {
-		this.view = view;
-	}
+	@FXML
+	private ImageView imageView;
+	
+	@FXML
+	private Button rollTheDiceButton;
 
-	public void handle(ActionEvent event) {
-		if (event.getSource().equals(view.getButton())) {
-			// Eingabefeld der View auslesen
+	@FXML 	public void handle(ActionEvent event) {
+		
 			dice.rollTheDice();
 			int wert = dice.getValue();
+			image = null;
 			
 			switch(wert)
 			{
@@ -50,9 +52,9 @@ public class Controller implements EventHandler<ActionEvent> {
 				break;
 			}
 			
-			view.getImageView().setImage(image);
+			imageView.setImage(image);
 			
-		} 
-	}
+		}
+	
 
 }
