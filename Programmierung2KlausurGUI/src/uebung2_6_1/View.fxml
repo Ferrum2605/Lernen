@@ -5,7 +5,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.image.Image?>
 
-<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="uebung2_4_1.Controller">
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="uebung2_6_1.Controller" alignment="CENTER">
 	<children>
 		<ImageView fx:id="imageView" />
 		<Button fx:id="button" text="Würfeln" onAction="#handle" />

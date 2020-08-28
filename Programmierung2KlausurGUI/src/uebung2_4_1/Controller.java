@@ -3,15 +3,12 @@ package uebung2_4_1;
 import javax.management.StringValueExp;
 
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.fxml.FXML;
 
-public class Controller implements EventHandler<ActionEvent> {
+public class Controller {
 
 	//private View view;
 	private Dice dice = new Dice(1);
@@ -22,9 +19,10 @@ public class Controller implements EventHandler<ActionEvent> {
 	private ImageView imageView;
 	
 	@FXML
-	private Button rollTheDiceButton;
+	private Button button;
 
-	@FXML 	public void handle(ActionEvent event) {
+	@FXML 	
+	public void handle(ActionEvent event) {
 		
 			dice.rollTheDice();
 			int wert = dice.getValue();
