@@ -2,6 +2,8 @@ package uebung2_8_1;
 
 import java.util.Random;
 
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.scene.image.Image;
 
 public class Model {
@@ -13,8 +15,11 @@ public class Model {
 	 * Singleton-Bereich
 	 */
 	private static Model instance;
+	
+	private StringProperty text;
 
 	private Model() {
+		text = new SimpleStringProperty();
 	}
 
 	public static Model getInstance() {
