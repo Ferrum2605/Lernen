@@ -11,11 +11,11 @@ public class Startklasse extends Application{
 		launch(args);
 	}
 	
-	public void start(Stage primaryStage)
+	public void start(Stage primaryStage) throws Exception
 	{
 		View view = new View();
 		Scene scene = new Scene(view.getRoot());
-		primaryStage.setTitle("Aufgabe 2.1");
+		primaryStage.setTitle("Aufgabe 2.3");
 		primaryStage.setHeight(200);
 		primaryStage.setWidth(200);
 		primaryStage.setScene(scene);
