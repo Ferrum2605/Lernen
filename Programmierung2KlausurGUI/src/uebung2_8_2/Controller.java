@@ -1,4 +1,4 @@
-package uebung2_8_1;
+package uebung2_8_2;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -13,7 +13,7 @@ import javafx.scene.image.ImageView;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 
-public class Controller implements Initializable{
+public class Controller {
 	
 	private Model model;
 
@@ -25,18 +25,19 @@ public class Controller implements Initializable{
 	
 	@FXML
 	private Label valueLabel;
+	
+	private void initialize()
+	{
+		
+	}
 
 	 	
 	
-	public void initialize(URL location, ResourceBundle resource)
-	{
-		model = Model.getInstance();
-		valueLabel.textProperty().bind(model.getDiceValueProperty());
-	}
-	
 	@FXML
 	public void rollTheDice(ActionEvent event) {
+		model = Model.getInstance();
 		Image image = model.rollTheDiceAndGetImage();
+		valueLabel.setText(model.getDiceValueProperty());
 		imageView.setImage(image);
 	}
 	

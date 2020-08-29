@@ -1,4 +1,4 @@
-package uebung2_8_1;
+package uebung2_8_2;
 
 import java.util.Random;
 

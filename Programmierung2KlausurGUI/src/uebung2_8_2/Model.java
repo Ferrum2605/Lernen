@@ -1,4 +1,4 @@
-package uebung2_8_1;
+package uebung2_8_2;
 
 import java.util.Random;
 
@@ -31,15 +31,17 @@ public class Model {
 	 */
 	private Dice dice = new Dice();
 	
-	private StringProperty diceValueProperty = new SimpleStringProperty();
+	private String diceValueProperty = "";
 
 	public Image rollTheDiceAndGetImage() {
+		
 		dice.rollTheDice();
-		diceValueProperty.set(String.valueOf(dice.getValue()));
+		diceValueProperty = Integer.toString(dice.getValue());
 		return dice.getImage();
 	}
 	
-	public StringProperty getDiceValueProperty() {
+	public String getDiceValueProperty() {
+		System.out.println(diceValueProperty);
 		return diceValueProperty;
 	}
 
