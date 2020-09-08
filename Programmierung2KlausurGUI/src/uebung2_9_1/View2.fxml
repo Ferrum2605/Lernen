@@ -5,7 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 
-<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="uebung2_7_1.Controller2">
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="uebung2_9_1.Controller2">
 	<children>
 		<Label text="Zinsen" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
 		<Label fx:id="interestLabel" text="" GridPane.rowIndex="0" GridPane.columnIndex="1"/>

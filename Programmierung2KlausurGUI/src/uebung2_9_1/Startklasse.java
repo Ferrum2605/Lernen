@@ -20,7 +20,7 @@ public class Startklasse extends Application{
 	{
 		Parent root = FXMLLoader.load(getClass().getResource("View.fxml"));
 		Scene scene = new Scene(root);
-		primaryStage.setTitle("Aufgabe 2.7");
+		primaryStage.setTitle("Aufgabe 2.9");
 		primaryStage.setHeight(200);
 		primaryStage.setWidth(600);
 		primaryStage.setScene(scene);
